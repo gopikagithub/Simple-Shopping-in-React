@@ -19,7 +19,7 @@ const cartOnclickHandler=()=>(
         <div className='nav-links-container'>
           <Link to={'/shop'} className='nav-link'><div>Shop</div></Link>
           <Link to={'/authentication'} className='nav-link'><div>auth</div></Link>
-          <div className='nav-link' onClick={cartOnclickHandler}><a >cart</a></div>
+          <div className='nav-link' onClick={cartOnclickHandler}>cart</div>
         </div>
 
       </div>
