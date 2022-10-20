@@ -26,31 +26,31 @@
     {
       "id": 5,
       "name": "Green Beanie",
-      "imageUrl": "https://i.ibb.co/YTjW3vF/green-beanie.png",
+      "imageUrl": "https://lookastic-production.s3.amazonaws.com/article/photo/80/original.jpg",
       "price": 18
     },
     {
       "id": 6,
       "name": "Palm Tree Cap",
-      "imageUrl": "https://i.ibb.co/rKBDvJX/palm-tree-cap.png",
+      "imageUrl": "https://i.pinimg.com/originals/fc/e1/93/fce193eff44297c713a59c46f2942e92.jpg",
       "price": 14
     },
     {
       "id": 7,
       "name": "Red Beanie",
-      "imageUrl": "https://i.ibb.co/bLB646Z/red-beanie.png",
+      "imageUrl": "https://th.bing.com/th/id/OIP.VqGnsNjAE2iYMDqxFl8YNwHaHa?pid=ImgDet&rs=1",
       "price": 18
     },
     {
       "id": 8,
       "name": "Wolf Cap",
-      "imageUrl": "https://i.ibb.co/1f2nWMM/wolf-cap.png",
+      "imageUrl": "https://img.hatshopping.com/Lone-Wolf-Trucker-Cap-by-Goorin-Bros-.51214_1.jpg",
       "price": 14
     },
     {
       "id": 9,
       "name": "Blue Snapback",
-      "imageUrl": "https://i.ibb.co/X2VJP2W/blue-snapback.png",
+      "imageUrl": "https://i.pinimg.com/originals/f9/1e/bf/f91ebf1d47d37115eb662f9fbba8bbd0.jpg",
       "price": 16
     }
   ]
