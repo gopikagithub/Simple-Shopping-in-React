@@ -1,14 +1,19 @@
-import { Fragment } from 'react';
+import { Fragment, useContext } from 'react';
 import { Link, Outlet, useNavigate } from 'react-router-dom';
-import Checkout from '../checkout/checkout.component';
+import CartDropdown from '../../components/cart-dropdown/cart-dropdown.component';
+import CartIcon from '../../components/cart-icon/cart-icon.component';
+import { CartContext } from '../../contexts/cart.context';
+import { UserContext } from '../../contexts/user.context';
+import { signOutUser } from '../../utils/firebase/firebase.utils';
 import './navigation.styles.scss'
 
 const Navigation=()=>{
-  const navigate=useNavigate();
-const cartOnclickHandler=()=>(
-  navigate('/checkout')
-    
-  )
+
+const navigate=useNavigate();
+
+const {currentUser}=useContext(UserContext);
+const {isCartOpen}=useContext(CartContext);
+
   return(
     <Fragment>
 
@@ -18,9 +23,10 @@ const cartOnclickHandler=()=>(
 
         <div className='nav-links-container'>
           <Link to={'/shop'} className='nav-link'><div>Shop</div></Link>
-          <Link to={'/authentication'} className='nav-link'><div>auth</div></Link>
-          <div className='nav-link' onClick={cartOnclickHandler}>cart</div>
+          {currentUser?<span className='nav-link' onClick={signOutUser}>SIGN OUT</span>:<Link className='nav-link' to='/auth'>SIGN IN</Link>}
+          <CartIcon />
         </div>
+        {isCartOpen&&<CartDropdown/>}
 
       </div>
 
