@@ -19,10 +19,10 @@ const {isCartOpen}=useContext(CartContext);
 
       <div className='navigation-container'>
 
-        <Link to={'/'} className="logo-container" >Home</Link>
+        <Link to={'/'} className="logo-container" >HOME</Link>
 
         <div className='nav-links-container'>
-          <Link to={'/shop'} className='nav-link'><div>Shop</div></Link>
+          <Link to={'/shop'} className='nav-link'><div>SHOP</div></Link>
           {currentUser?<span className='nav-link' onClick={signOutUser}>SIGN OUT</span>:<Link className='nav-link' to='/auth'>SIGN IN</Link>}
           <CartIcon />
         </div>
