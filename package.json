@@ -2,7 +2,7 @@
   "name": "simple-shopping",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gopikagithub.github.io/Simple-Shopping-in-React",
+  "homepage": "http://gopikagithub.github.io/Simple-Shopping-in-React",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -20,8 +20,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": " gh-pages -d build"
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,7 +42,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0",
     "sass": "^1.55.0",
     "sass-loader": "^12.6.0",
     "webpack": "^5.74.0"
